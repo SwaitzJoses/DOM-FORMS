@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var form= document.createElement("form");
+        document.body.appendChild(form);
+
+         var label = document.createElement("label");
+         label.innerHTML="First Name"
+         form.appendChild(label);
+
+         var input = document.createElement("input");
+         input.setAttribute("id","text");
+         form.appendChild(input);
+         linebreak = document.createElement("br");
+         form.appendChild(linebreak);
+
+         var label2 = document.createElement("label");
+         label2.innerHTML="Last Name"
+         form.appendChild(label2);
+
+         var input2 = document.createElement("input");
+         input2.setAttribute("id","text2");
+         form.appendChild(input2);
+
+         linebreak = document.createElement("br");
+         form.appendChild(linebreak);
+         var label3 = document.createElement("label");
+         label3.innerHTML="Address"
+         form.appendChild(label3);
+
+         var input3 = document.createElement("input");
+         input3.setAttribute("id","text3");
+         form.appendChild(input3);
+       
+
+        
+
+         linebreak = document.createElement("br");
+         form.appendChild(linebreak);
+         var label4 = document.createElement("label");
+         label4.innerHTML="Pin Code"
+         form.appendChild(label4);
+
+         var input4 = document.createElement("input");
+         input4.setAttribute("id","text4");
+         form.appendChild(input4);
+
+         
+         linebreak = document.createElement("br");
+         form.appendChild(linebreak);
+
+         //var rates = document.getElementById('rates').value;
+
+         var label5 = document.createElement("label");
+         label5.setAttribute("id","l5");
+         label5.innerHTML="Gender"
+         form.appendChild(label5);
+
+         var label51 = document.createElement("label");
+         label51.innerHTML="Male"
+         form.appendChild(label51);
+
+         var input5 = document.createElement("input");
+         input5.setAttribute("id","text5");
+         input5.setAttribute("type","radio","name","r","value", "male" );
+         input5.setAttribute("name","r");                                                // somewhere here
+         input5.setAttribute("value", "Male");
+         
+         form.appendChild(input5);
+         
+         
+
+         var label52 = document.createElement("label");
+         label52.innerHTML="Female"
+         form.appendChild(label52);
+
+         var input52 = document.createElement("input");
+         input52.setAttribute("id","text52");
+         input52.setAttribute("type","radio","name","r","value", "female");
+         input52.setAttribute("name","r");
+         input52.setAttribute("value", "Female");
+         
+         form.appendChild(input52);
+
+
+         
+
+         linebreak = document.createElement("br");
+         form.appendChild(linebreak);
+
+         var label6 = document.createElement("label");
+         label6.innerHTML="State"
+         form.appendChild(label6);
+
+         var input6 = document.createElement("input");
+         input6.setAttribute("id","text6");
+         form.appendChild(input6);
+
+         
+         linebreak = document.createElement("br");
+         form.appendChild(linebreak);
+
+         var label7 = document.createElement("label");
+         label7.innerHTML="Country"
+         form.appendChild(label7);
+
+         var input7 = document.createElement("input");
+         input7.setAttribute("id","text7");
+         form.appendChild(input7);
+
+
+
+       
+
+         var btn=document.createElement("button")
+         btn.setAttribute("id","btn","type","button" );
+         btn.innerHTML="SUBMIT";
+         form.appendChild(btn);
+
+        
+         
+
+                 var table = document.createElement("table");
+                
+                table.setAttribute("id","table",)
+                document.body.appendChild(table);
+          table.setAttribute("style", "border : thin solid black");
+          table.setAttribute("style", "border-collapse: collapse");
+          table.setAttribute("stlye","width: 100%" );
+                var tr = document.createElement("tr");
+                tr.setAttribute("id","tr");
+                table.appendChild(tr);
+
+                var td = document.createElement("td");
+                td.setAttribute("id","td");
+                td.setAttribute("style", "border : thin solid black");
+                td.innerHTML='First Name'
+                tr.appendChild(td);
+
+                var td1 = document.createElement("td");
+                td1.setAttribute("id","td1");
+                tr.appendChild(td1);
+
+                var tr2 = document.createElement("tr");
+                tr2.setAttribute("id","tr2");
+                table.appendChild(tr2);
+
+                var td2 = document.createElement("td");
+                td2.setAttribute("id","td2");
+                td2.setAttribute("style", "border : thin solid black");
+                td2.innerHTML='Last Name'
+                tr2.appendChild(td2);
+
+                var td12 = document.createElement("td");
+                td12.setAttribute("id","td12");
+                tr2.appendChild(td12);
+
+                
+                var tr3 = document.createElement("tr");
+                tr3.setAttribute("id","tr3");
+                table.appendChild(tr3);
+
+                var td3 = document.createElement("td");
+                td3.setAttribute("id","td3");
+                td3.setAttribute("style", "border : thin solid black");
+                td3.innerHTML='Address'
+                tr3.appendChild(td3);
+
+                var td13 = document.createElement("td");
+                td13.setAttribute("id","td13");
+                tr3.appendChild(td13);
+
+
+                var tr4 = document.createElement("tr");
+                tr4.setAttribute("id","tr4");
+                table.appendChild(tr4);
+
+                var td4 = document.createElement("td");
+                td4.setAttribute("id","td4");
+                td4.setAttribute("style", "border : thin solid black");
+                td4.innerHTML='Pin Code'
+                tr4.appendChild(td4);
+
+                var td14 = document.createElement("td");
+                td14.setAttribute("id","td14");
+                tr4.appendChild(td14);
+
+
+                var tr5 = document.createElement("tr");
+                tr5.setAttribute("id","tr5");
+                table.appendChild(tr5);
+
+                var td5 = document.createElement("td");
+                td5.setAttribute("id","td5");
+                td5.setAttribute("style", "border : thin solid black");
+                td5.innerHTML='Gender'
+                tr5.appendChild(td5);
+
+                var td15 = document.createElement("td");
+                td15.setAttribute("id","td15");
+                tr5.appendChild(td15);
+
+
+                var tr6 = document.createElement("tr");
+                tr6.setAttribute("id","tr6");
+                table.appendChild(tr6);
+
+                var td6 = document.createElement("td");
+                td6.setAttribute("id","td6");
+                td6.setAttribute("style", "border : thin solid black");
+                td6.innerHTML='State'
+                tr6.appendChild(td6);
+
+                var td16 = document.createElement("td");
+                td16.setAttribute("id","td16");
+                tr6.appendChild(td16);
+
+
+                var tr7 = document.createElement("tr");
+                tr7.setAttribute("id","tr7");
+                table.appendChild(tr7);
+
+                var td7 = document.createElement("td");
+                td7.setAttribute("id","td7");
+                td7.setAttribute("style", "border : thin solid black");
+                td7.innerHTML='Country'
+                tr7.appendChild(td7);
+
+                var td17 = document.createElement("td");
+                td17.setAttribute("id","td17");
+                tr7.appendChild(td17);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         btn.addEventListener("click", output)
+         
+         function output (e) {
+  document.getElementById("td1").innerHTML = input.value;
+ td1.setAttribute("style", "border : thin solid black","width: 100%" )
+
+ document.getElementById("td12").innerHTML = input2.value;
+ td12.setAttribute("style", "border : thin solid black","width: 100%" )
+  
+ document.getElementById("td13").innerHTML = input3.value;
+ td13.setAttribute("style", "border : thin solid black","width: 100%" )
+
+ document.getElementById("td14").innerHTML = input4.value;
+ td14.setAttribute("style", "border : thin solid black","width: 100%" )
+
+if(input5.checked === true){
+ document.getElementById("td15").innerHTML = input5.value ;     // value inserted here ,,,, if I put input5 I get male
+ td15.setAttribute("style", "border : thin solid black","width: 100%" )
+}
+else if (input52.checked === true ){
+    document.getElementById("td15").innerHTML = input52.value;      // value inserted here ,,,, if I put input5 I get male
+ td15.setAttribute("style", "border : thin solid black","width: 100%" ) 
+}
+
+
+
+ document.getElementById("td16").innerHTML = input6.value;
+ td16.setAttribute("style", "border : thin solid black","width: 100%" )
+
+ document.getElementById("td17").innerHTML = input7.value;
+ td17.setAttribute("style", "border : thin solid black","width: 100%" )
+
+
+
+  e.preventDefault();
+};
+       
+
+    </script>
+
+</body>
+</html>
